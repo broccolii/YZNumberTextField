@@ -90,7 +90,7 @@
             return NO;
         }
         
-        // The first can't input "00.", replace "0."
+        // The first can't input "00."
         if ((range.location == 0 || [textField.text isEqualToString:@""]) && [string containsString:@"0"]) {
             textField.text = @"0.";
             return NO;
@@ -141,6 +141,11 @@
     } else {
         return YES;
     }
+}
+
+#pragma mark -- setter
+- (void)setDelegate:(id<UITextFieldDelegate>)delegate {
+    NSAssert(delegate == nil, @"You should use BRMoneyTextFieldDelegate");
 }
 
 @end
