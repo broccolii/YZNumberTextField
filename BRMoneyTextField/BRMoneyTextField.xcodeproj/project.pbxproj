@@ -13,7 +13,7 @@
 		A40720611D7E8B23002D51D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A407205F1D7E8B23002D51D9 /* Main.storyboard */; };
 		A40720631D7E8B23002D51D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A40720621D7E8B23002D51D9 /* Assets.xcassets */; };
 		A40720661D7E8B23002D51D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40720641D7E8B23002D51D9 /* LaunchScreen.storyboard */; };
-		A40720701D7E8B79002D51D9 /* BRMoneyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A407206F1D7E8B79002D51D9 /* BRMoneyTextField.m */; };
+		A40720741D7E9CD4002D51D9 /* BRMoneyTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = A40720731D7E9CD4002D51D9 /* BRMoneyTextField.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +27,10 @@
 		A40720621D7E8B23002D51D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A40720651D7E8B23002D51D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A40720671D7E8B23002D51D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A407206E1D7E8B79002D51D9 /* BRMoneyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BRMoneyTextField.h; path = BRMoneyTextField/BRMoneyTextField.h; sourceTree = "<group>"; };
-		A407206F1D7E8B79002D51D9 /* BRMoneyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BRMoneyTextField.m; path = BRMoneyTextField/BRMoneyTextField.m; sourceTree = "<group>"; };
+		A40720721D7E9CD4002D51D9 /* BRMoneyTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRMoneyTextField.h; sourceTree = "<group>"; };
+		A40720731D7E9CD4002D51D9 /* BRMoneyTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRMoneyTextField.m; sourceTree = "<group>"; };
+		A407207B1D7EC8BD002D51D9 /* BRMonryTextField.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BRMonryTextField.h; sourceTree = "<group>"; };
+		A407207D1D7EC8BD002D51D9 /* BRMonryTextField.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BRMonryTextField.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				A40720551D7E8B23002D51D9 /* BRMoneyTextField */,
+				A407207A1D7EC8BD002D51D9 /* BRMonryTextField */,
 				A40720541D7E8B23002D51D9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +64,7 @@
 		A40720551D7E8B23002D51D9 /* BRMoneyTextField */ = {
 			isa = PBXGroup;
 			children = (
-				A407206D1D7E8B5C002D51D9 /* BRMoneyTextField */,
+				A40720711D7E9CD4002D51D9 /* BRMoneyTextField */,
 				A40720591D7E8B23002D51D9 /* AppDelegate.h */,
 				A407205A1D7E8B23002D51D9 /* AppDelegate.m */,
 				A407205C1D7E8B23002D51D9 /* ViewController.h */,
@@ -83,13 +86,22 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A407206D1D7E8B5C002D51D9 /* BRMoneyTextField */ = {
+		A40720711D7E9CD4002D51D9 /* BRMoneyTextField */ = {
 			isa = PBXGroup;
 			children = (
-				A407206E1D7E8B79002D51D9 /* BRMoneyTextField.h */,
-				A407206F1D7E8B79002D51D9 /* BRMoneyTextField.m */,
+				A40720721D7E9CD4002D51D9 /* BRMoneyTextField.h */,
+				A40720731D7E9CD4002D51D9 /* BRMoneyTextField.m */,
 			);
-			name = BRMoneyTextField;
+			path = BRMoneyTextField;
+			sourceTree = "<group>";
+		};
+		A407207A1D7EC8BD002D51D9 /* BRMonryTextField */ = {
+			isa = PBXGroup;
+			children = (
+				A407207B1D7EC8BD002D51D9 /* BRMonryTextField.h */,
+				A407207D1D7EC8BD002D51D9 /* BRMonryTextField.m */,
+			);
+			path = BRMonryTextField;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,7 +177,7 @@
 			files = (
 				A407205E1D7E8B23002D51D9 /* ViewController.m in Sources */,
 				A407205B1D7E8B23002D51D9 /* AppDelegate.m in Sources */,
-				A40720701D7E8B79002D51D9 /* BRMoneyTextField.m in Sources */,
+				A40720741D7E9CD4002D51D9 /* BRMoneyTextField.m in Sources */,
 				A40720581D7E8B23002D51D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
