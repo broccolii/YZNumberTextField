@@ -19,8 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-//    _moneyTextField.maxValue = 999.99;
-
+    
+    _moneyTextField.maxValue = 999.99;
     [_moneyTextField becomeFirstResponder];
 }
 

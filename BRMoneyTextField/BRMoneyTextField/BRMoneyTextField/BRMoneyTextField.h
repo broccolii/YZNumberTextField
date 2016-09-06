@@ -46,9 +46,9 @@
 @property (nullable, nonatomic, weak) id<BRMoneyTextFieldDelegate> br_delegate;
 
 // defalue value is CGFLOAT_MAX
-@property (nonatomic, assign) double maxValue;
+@property (nonatomic, assign) IBInspectable double maxValue;
 
 // enable two decimal places, defalue value is YES
-@property (nonatomic, assign) BOOL enableTwoDecimalPlaces;
+@property (nonatomic, assign) IBInspectable BOOL enableTwoDecimalPlaces;
 
 @end
