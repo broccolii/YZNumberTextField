@@ -1,8 +1,6 @@
 # BRMoneyTextField
 BRMoneyTextField to limit the number of amounts entered.
 
----
-
 #### feature:
 * The first can't input ".", replace "0."
 * The first can't input "00."
@@ -42,7 +40,7 @@ add a new delegate method
 // called when textField double value overtop max value
 - (void)br_textFieldOvertopMaxValue:(nonnull BRMoneyTextField *)textField;
 ```
----
+
 ## License
 
 BRMoneyTextField is released under the Apache 2.0 license. See LICENSE for details.
