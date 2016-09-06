@@ -14,20 +14,41 @@
 
 @optional
 
-- (BOOL)br_textFieldShouldBeginEditing:(nonnull BRMoneyTextField *)textField;        // return NO to disallow editing.
-- (void)br_textFieldDidBeginEditing:(nonnull BRMoneyTextField *)textField;           // became first responder
-- (BOOL)br_textFieldShouldEndEditing:(nonnull BRMoneyTextField *)textField;          // return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
-- (void)br_textFieldDidEndEditing:(nonnull BRMoneyTextField *)textField;             // may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+// return NO to disallow editing.
+- (BOOL)br_textFieldShouldBeginEditing:(nonnull BRMoneyTextField *)textField;
 
-- (BOOL)br_textField:(nonnull BRMoneyTextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(nonnull NSString *)string;   // return NO to not change text
+// became first responder
+- (void)br_textFieldDidBeginEditing:(nonnull BRMoneyTextField *)textField;
 
-- (BOOL)br_textFieldShouldClear:(nonnull BRMoneyTextField *)textField;               // called when clear button pressed. return NO to ignore (no notifications)
-- (BOOL)br_textFieldShouldReturn:(nonnull BRMoneyTextField *)textField;              // called when 'return' key pressed. return NO to ignore.
+// return YES to allow editing to stop and to resign first responder status. NO to disallow the editing session to end
+- (BOOL)br_textFieldShouldEndEditing:(nonnull BRMoneyTextField *)textField;
+
+// may be called if forced even if shouldEndEditing returns NO (e.g. view removed from window) or endEditing:YES called
+- (void)br_textFieldDidEndEditing:(nonnull BRMoneyTextField *)textField;
+
+// return NO to not change text
+- (BOOL)br_textField:(nonnull BRMoneyTextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(nonnull NSString *)string;
+
+// called when clear button pressed. return NO to ignore (no notifications)
+- (BOOL)br_textFieldShouldClear:(nonnull BRMoneyTextField *)textField;
+
+// called when 'return' key pressed. return NO to ignore.
+- (BOOL)br_textFieldShouldReturn:(nonnull BRMoneyTextField *)textField;
+
+// called when textField double value overtop max value
+- (void)br_textFieldOvertopMaxValue:(nonnull BRMoneyTextField *)textField;
 
 @end
 
 @interface BRMoneyTextField : UITextField
 
+// replace UITextField's delegate
 @property (nullable, nonatomic, weak) id<BRMoneyTextFieldDelegate> br_delegate;
+
+// defalue value is CGFLOAT_MAX
+@property (nonatomic, assign) double maxValue;
+
+// enable two decimal places, defalue value is YES
+@property (nonatomic, assign) BOOL enableTwoDecimalPlaces;
 
 @end
