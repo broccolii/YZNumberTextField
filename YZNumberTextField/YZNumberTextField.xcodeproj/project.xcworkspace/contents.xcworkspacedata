@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BRMoneyTextField.xcodeproj">
+      location = "self:YZNumberTextField.xcodeproj">
    </FileRef>
 </Workspace>

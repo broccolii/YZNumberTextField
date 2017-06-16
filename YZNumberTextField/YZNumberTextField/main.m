@@ -1,9 +1,9 @@
 //
 //  main.m
-//  BRMoneyTextField
+//  YZNumberTextField
 //
-//  Created by Broccoli on 16/9/6.
-//  Copyright © 2016年 youzan. All rights reserved.
+//  Created by Broccoli on 2017/6/16.
+//  Copyright © 2017年 broccoliii. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
